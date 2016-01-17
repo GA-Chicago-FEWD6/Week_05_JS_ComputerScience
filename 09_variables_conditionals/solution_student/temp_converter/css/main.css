@@ -52,3 +52,28 @@ button {
   background-color: rgba(255, 0, 0, .6);
   padding: 10px;
 }
+
+.freezing {
+  background-image: url('https://ak-hdl.buzzfed.com/static/2015-01/21/13/enhanced/webdr11/anigif_enhanced-buzz-12252-1421864776-9.gif');
+}
+
+.bearabletemp {
+  background-image: url('https://7-themes.com/data_images/out/75/7030520-early-spring-flowers.jpg');
+}
+
+.perfect {
+  background-image: url('http://i0.wp.com/chicagogenie.com/wp-content/uploads/2015/06/U.S.-Cellular-Field.jpg?resize=700%2C525');
+}
+
+.hothothot {
+  background-image: url('https://mgtvwnct.files.wordpress.com/2015/09/airplane_robert_hays_ted_striker_sweating_profusely-e1378390057378.png');
+}
+
+.converterbox {
+  padding: 5px;
+  background-color: #D8D8D8;
+  opacity: 0.8;
+  border: none;
+  width: 40%;
+  margin: auto;
+}
