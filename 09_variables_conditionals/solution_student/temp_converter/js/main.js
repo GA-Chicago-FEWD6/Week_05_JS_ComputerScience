@@ -1,35 +1,38 @@
-// enter value 
-$('#fahrenheit_to_celsius').on('click' function () {
+$('#fahrenheit_to_celsius').on('click', function() {
 	var inputTemp = $('#temperature').val();
 	inputTemp = parseFloat(inputTemp);
-	
+	var cTemp = inputTemp - 32 / 1.8; 
+	$('#result').html(cTemp + ' °C ');
 
-	if (condition) {
-		(fahrenheit - 32) / 1.8
+
+		if (cTemp > 10) {
+			$('body').addClass('hot');
+			$('body').removeClass('cold');
+	} else if (cTemp < 10) {
+			$('body').addClass('cold');
+			$('body').removeClass('hot');
+	// I couldn't figure this part out. Was I on the right track? 
+	//} else if (inputTemp == '') {
+	//		$('#result').html('Please enter a temp');
+	//		$('#result').addClass('error');
+	//		$('body').removeClass('hot, cold');
 	}
 });
 
-// user enters value
-// 
-// user clicks F to C
-//  initialVal = get value of input
-//  resultVal = use formula of F to C to convert initialVal to C
-//  
-//  if initialVal is blank
-//    display error
-//  else (if not blank)
-//    display resultVal in #result
-// 
-// user clicks C to F
-//  initialVal = get value of input
-//  resultVal = use formula of C to F to convert initialVal to F
-//  display resultVal in #result
-//  
-//  SUPER BONUS FUN ZONE
-//  display error if input is blank
 
-$('#celsius_to_fahrenheit').on('click' function () {
+$('#celsius_to_fahrenheit').on('click', function () {
 	var inputTemp = $('#temperature').val();
 	inputTemp = parseFloat(inputTemp);
+	var fTemp = 1.8 * inputTemp + 32;
+	$('#result').html(fTemp + ' °F ');
 
+
+		if (fTemp > 50) {
+			$('body').addClass('hot');
+			$('body').removeClass('cold');
+	} else if (fTemp < 50) {
+			$('body').addClass('cold');
+			$('body').removeClass('hot');
+}
 });
+

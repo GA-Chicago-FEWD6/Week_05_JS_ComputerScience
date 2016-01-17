@@ -35,6 +35,14 @@ button {
   cursor: pointer;
 }
 
+.hot {
+  background-color: red; 
+}
+
+.cold {
+  background-color: blue; 
+}
+
 /* Error styles
    ================================================================ */
 
