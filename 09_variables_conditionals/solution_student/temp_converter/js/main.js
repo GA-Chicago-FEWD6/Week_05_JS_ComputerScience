@@ -38,7 +38,7 @@
 // 	errorStyle
 // }
 
-
+//I wanted to re-write everything below here to clean it up a bit and add the Bonus 2:
 
 $('#fahrenheit_to_celsius').on('click', function () {
     $('body').removeClass('cold warm hot');
